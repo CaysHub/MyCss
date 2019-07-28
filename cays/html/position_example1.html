@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Positoin Example1</title>
+    <style>
+        .container {
+            position: relative;
+        }
+        nav {
+            position: absolute;
+            left: 0px;
+            width: 200px;
+        }
+        section {
+            /* position is static by default */
+            margin-left: 200px;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 70px;
+            background-color: white;
+            width: 100%;
+        }
+        body {
+            margin-bottom: 120px;
+        }
+    </style>
+</head>
+<body>
+<nav class="container">
+    Home
+    Taco Menu
+    Draft List
+    Hours
+    Directions
+    Contact
+</nav>
+<section>
+    section 的 margin-left 样式确保了有足够的空间容纳 nav 元素。
+</section>
+<section>
+    注意观察当你调整浏览器窗口时发生了什么。效果很赞！
+</section>
+<section>
+    注意观察当你调整浏览器窗口时发生了什么。效果很赞！
+</section>
+<footer>
+    如果你使用了一个固定定位的页眉或页脚，确保有足够的空间来显示它们！我在 body 上面加了 margin-bottom 。
+</footer>
+</body>
+</html>
